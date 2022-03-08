@@ -1,5 +1,9 @@
 const beers = document.querySelector('.beers');
 
+function styleFoodSuggestion(food) {
+  return `<br />- ${food}`;
+}
+
 function createBeerDescription(beer) {
   return `
     <li class="beer">
@@ -15,16 +19,14 @@ function createBeerDescription(beer) {
         <br />
         <p>Brewers tips: ${beer.brewers_tips}</p>
         <br />
-        <p>Best paired with: ${beer.food_pairing.map(function (food) {
-          return `<br />- ${food}`;
-        })}</p>
+        <p>Best paired with: ${beer.food_pairing.map(styleFoodSuggestion)}</p>
       </div>
     </li>
   `;
 }
 
 function displayBeers(data) {
-  data.forEach(function (beer) {
+  data.forEach((beer) => {
     beers.innerHTML += createBeerDescription(beer);
   });
 }
