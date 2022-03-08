@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 115%;
+  border: none;
+  font-weight: 400;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background: #e1e1e1;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0 0 10px 0;
+  color: orange;
+}
+h2 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+h3 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+h4 {
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 25px;
+}
+
+main {
+  padding: 25px;
+}
+
+.beers {
+  margin-top: 25px;
+}
+
+.beer {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.beer-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  min-width: 250px;
+  background: #fff;
+  padding: 25px;
+}
+
+.beer-image > img {
+  height: 85%;
+  width: auto;
+}
+
+.beer-info {
+  padding-left: 25px;
+}
